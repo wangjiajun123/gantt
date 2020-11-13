@@ -1,0 +1,68 @@
+{
+  "name": "v-gantt-chart",
+  "version": "1.5.0",
+  "description": "display gantt-like vaule,like use this to order bus schedule.",
+  "main": "dist/v-gantt-chart.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w1301625107/Vue-Gantt-chart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/w1301625107/Vue-Gantt-chart/issues"
+  },
+  "homepage": "https://github.com/w1301625107/Vue-Gantt-chart#readme",
+  "keywords": [
+    "vue-gantt-chart",
+    "gantt",
+    "gantt-chart",
+    "v-gantt-chart"
+  ],
+  "author": "wuchouchou",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run lint --fix && NODE_ENV=DEMO vue-cli-service build ",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "libbuild": "npm run lint  --fix && vue-cli-service build --target lib --name v-gantt-chart src/index.js"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "core-js": "^3.4.3",
+    "dayjs": "^1.8.17",
+    "lint-staged": "^10.2.11",
+    "resize-observer-polyfill": "^1.5.1",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-unit-mocha": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-component": "^1.1.1",
+    "chai": "^4.1.2",
+    "element-ui": "^2.13.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "mockjs": "^1.1.0",
+    "prettier": "^1.19.1",
+    "sass": "^1.23.7",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

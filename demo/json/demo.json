@@ -1,0 +1,181 @@
+[{
+  "id": "770",
+  "name": "保障组",
+  "type": "🚄",
+  "colorPair": {
+    "dark": "rgb(208, 142, 2231,0.8)",
+    "light": "rgb(208, 142, 2231,0.1)"
+  },
+  "speed": 12,
+  "gtArray": [{
+    "id": "VB8423",
+    "passenger": 21,
+    "start": "Wed, 11 Nov 2020 08:00:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:02:40 GMT"
+  }, {
+    "id": "GU8533",
+    "passenger": 75,
+    "start": "Wed, 11 Nov 2020 08:07:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:09:40 GMT"
+  }, {
+    "id": "FG1276",
+    "passenger": 60,
+    "start": "Wed, 11 Nov 2020 08:11:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:12:40 GMT"
+  }, {
+    "id": "TB2772",
+    "passenger": 194,
+    "start": "Wed, 11 Nov 2020 08:17:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:19:40 GMT"
+  }, {
+    "id": "AR8806",
+    "passenger": 112,
+    "start": "Wed, 11 Nov 2020 08:23:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:26:40 GMT"
+  }, {
+    "id": "OD3568",
+    "passenger": 192,
+    "start": "Wed, 11 Nov 2020 08:28:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:32:40 GMT"
+  }, {
+    "id": "VP3200",
+    "passenger": 61,
+    "start": "Wed, 11 Nov 2020 08:33:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:36:40 GMT"
+  }, {
+    "id": "XW8410",
+    "passenger": 165,
+    "start": "Wed, 11 Nov 2020 08:40:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:42:40 GMT"
+  }, {
+    "id": "XO5787",
+    "passenger": 20,
+    "start": "Wed, 11 Nov 2020 08:43:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:46:40 GMT"
+  }, {
+    "id": "QN2259",
+    "passenger": 167,
+    "start": "Wed, 11 Nov 2020 08:50:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:54:40 GMT"
+  }]
+}, {
+  "id": "637",
+  "name": "救火组",
+  "type": "🚈",
+  "colorPair": {
+    "dark": "rgb(208, 142, 2231,0.8)",
+    "light": "rgb(208, 142, 2231,0.1)"
+  },
+  "speed": 98,
+  "gtArray": [{
+    "id": "YF3189",
+    "passenger": 134,
+    "start": "Wed, 11 Nov 2020 07:59:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:00:40 GMT"
+  }, {
+    "id": "WJ5928",
+    "passenger": 135,
+    "start": "Wed, 11 Nov 2020 08:05:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:09:40 GMT"
+  }, {
+    "id": "BQ7833",
+    "passenger": 156,
+    "start": "Wed, 11 Nov 2020 08:12:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:17:40 GMT"
+  }, {
+    "id": "JL2946",
+    "passenger": 75,
+    "start": "Wed, 11 Nov 2020 08:21:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:25:40 GMT"
+  }, {
+    "id": "OH8943",
+    "passenger": 146,
+    "start": "Wed, 11 Nov 2020 08:26:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:28:40 GMT"
+  }, {
+    "id": "TU6352",
+    "passenger": 34,
+    "start": "Wed, 11 Nov 2020 08:31:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:34:40 GMT"
+  }, {
+    "id": "KT9999",
+    "passenger": 75,
+    "start": "Wed, 11 Nov 2020 08:35:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:39:40 GMT"
+  }, {
+    "id": "BM3521",
+    "passenger": 53,
+    "start": "Wed, 11 Nov 2020 08:41:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:44:40 GMT"
+  }, {
+    "id": "RW7047",
+    "passenger": 63,
+    "start": "Wed, 11 Nov 2020 08:46:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:50:40 GMT"
+  }, {
+    "id": "ZL9105",
+    "passenger": 59,
+    "start": "Wed, 11 Nov 2020 08:52:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:55:40 GMT"
+  }]
+}, {
+  "id": "100",
+  "name": "保障组",
+  "type": "🚈",
+  "colorPair": {
+    "dark": "rgb(208, 142, 2231,0.8)",
+    "light": "rgb(208, 142, 2231,0.1)"
+  },
+  "speed": 194,
+  "gtArray": [{
+    "id": "TZ8738",
+    "passenger": 15,
+    "start": "Wed, 11 Nov 2020 07:59:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:00:40 GMT"
+  }, {
+    "id": "TM3467",
+    "passenger": 19,
+    "start": "Wed, 11 Nov 2020 08:03:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:04:40 GMT"
+  }, {
+    "id": "NV4161",
+    "passenger": 181,
+    "start": "Wed, 11 Nov 2020 08:08:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:09:40 GMT"
+  }, {
+    "id": "GL1181",
+    "passenger": 37,
+    "start": "Wed, 11 Nov 2020 08:10:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:14:40 GMT"
+  }, {
+    "id": "TY6579",
+    "passenger": 188,
+    "start": "Wed, 11 Nov 2020 08:17:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:19:40 GMT"
+  }, {
+    "id": "VN6996",
+    "passenger": 49,
+    "start": "Wed, 11 Nov 2020 08:23:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:26:40 GMT"
+  }, {
+    "id": "YY4887",
+    "passenger": 36,
+    "start": "Wed, 11 Nov 2020 08:28:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:30:40 GMT"
+  }, {
+    "id": "IT8959",
+    "passenger": 167,
+    "start": "Wed, 11 Nov 2020 08:35:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:38:40 GMT"
+  }, {
+    "id": "SS6270",
+    "passenger": 151,
+    "start": "Wed, 11 Nov 2020 08:43:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:44:40 GMT"
+  }, {
+    "id": "EJ7904",
+    "passenger": 196,
+    "start": "Wed, 11 Nov 2020 08:49:40 GMT",
+    "end": "Wed, 11 Nov 2020 08:50:40 GMT"
+  }]
+}]

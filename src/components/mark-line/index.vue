@@ -38,25 +38,22 @@ export default {
   data() {
     return {
       visible: false,
-      dayjs: dayjs
+      dayjs: dayjs,
+      offSet:28
     };
   },
   methods: {
     handleMarkLineTime(){
-      // return dayjs(this.markLineTime).format("HH:mm:ss");
       let  middleTime = new dayjs(this.markLineTime,"YYYY-MM-DD HH:mm").diff(this.getNowStartTime,"second");
-      if(middleTime!=0){
-        middleTime+=1;
-      }
       return this.$getHMS(middleTime);
     },
     getPosition() {
       if (this.markLineTime == null) {
         this.visible = false;
-        return 30;
+        return this.offSet;
       } else {
         this.visible = true;
-        return this.getPositonOffset(this.markLineTime) + 30;
+        return this.getPositonOffset(this.markLineTime) + this.offSet;
       }
     }
   }

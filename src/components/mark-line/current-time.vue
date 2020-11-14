@@ -30,7 +30,7 @@ export default {
   },
   created() {
     const timeNow = setInterval(() => {
-      this.currentTime = dayjs().subtract(this.deviationTime,'second').toString();
+      this.currentTime = dayjs().add(1,'second').subtract(this.deviationTime,'second').toString();
     }, 1000);
     this.$once("hook:beforeDestroy", () => {
       clearInterval(timeNow);

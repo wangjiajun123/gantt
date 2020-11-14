@@ -127,8 +127,14 @@ const scaleList = `1,2,3,4,5,6,10,12,15,20,30,60,120,180,240,360,720,1440,2880,4
 export default {
   name: "App",
   components: { Test, TestLeft },
+  computed: {
+    getTimeDiff () {
+      return new dayjs().second(0).diff(this.dataStartTime,"second");
+    }
+  },
   data() {
     return {
+      dataStartTime:"Sat, 14 Nov 2020 01:45:31 GMT",
       timeLines: [
         {
           time: dayjs()
@@ -171,6 +177,7 @@ export default {
       scrollToY: 0,
       positionB: {},
       positionA: {},
+      demoJson:null//这个是读取的模拟数据
 
     };
   },
@@ -186,14 +193,34 @@ export default {
     this.updateData();
   },
   methods: {
+    /**
+     * 数据中的输入时间的当前偏移后的相对时间
+     */
+    getOffSetDate(dayJsVal){
+      return new dayjs(dayJsVal).add(this.getTimeDiff,'second').toString()
+    },
     updateData() {
+      this.demoJson = require("../../demo/json/demo.json")
+      this.handlerDemoJson();
       let result  = mockDatas(this.rowNum, this.colNum, this.times);
-      this.handleArrEmpty(result);
-      this.datasA = result;
+      this.handleArrEmpty(this.demoJson);
+      this.datasA = this.demoJson;
       // this.arrEmpty = JSON.parse(JSON.stringify(result))
       // console.log(this.arrEmpty);
       // result = result.concat(this.arrEmpty);
       // this.datasA = result;
+    },
+    /**
+     * 处理将demoJson中的数据全部同步为当前的时间的相对时间
+     */
+    handlerDemoJson(){
+      let _self = this;
+      this.demoJson.forEach(item=>{
+        item.gtArray.forEach(gtItem=>{
+          gtItem.start = _self.getOffSetDate(gtItem.start);
+          gtItem.end = _self.getOffSetDate(gtItem.end);
+        })
+      })
     },
     /**
      * 将待处理的数据数组中的数据全部置为空,

@@ -53,10 +53,10 @@ export default {
     getPosition() {
       if (this.markLineTime == null) {
         this.visible = false;
-        return 0;
+        return 30;
       } else {
         this.visible = true;
-        return this.getPositonOffset(this.markLineTime);
+        return this.getPositonOffset(this.markLineTime) + 30;
       }
     }
   }

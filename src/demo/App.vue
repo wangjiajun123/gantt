@@ -177,7 +177,10 @@ export default {
       scrollToY: 0,
       positionB: {},
       positionA: {},
-      demoJson:null//这个是读取的模拟数据
+      demoJson:null,//这个是读取的模拟数据
+      runningColor:'#00ffff',//运行中的颜色
+      endColor:'#00cf7c',//正常结束
+      timeoutEndColor:'#FFA200',//超时结束
 
     };
   },
@@ -249,6 +252,7 @@ export default {
         }
       }
       this.arrEmpty.sort(compare("start"));
+      this.dynamicStateModification();
     },
     updateTimeLines(timeA, timeB) {
       this.timeLines = [
@@ -266,6 +270,69 @@ export default {
     },
     scrollLeftB(val) {
       this.positionA = { x: val };
+    },
+    /**
+     * 动态让甘特图变色
+     */
+    dynamicStateModification(){
+      new Promise(((resolve, reject) => {
+        //修改颜色
+        setTimeout( ()=>{
+          resolve();
+        },1000)
+      })).then(()=>{
+        let intervalsTime = 150;
+        this.intervalEndGtArray(intervalsTime);
+      })
+      new Promise(((resolve, reject) => {
+        //修改颜色
+        setTimeout( ()=>{
+          resolve();
+        },61000)
+      })).then(()=>{
+        let intervalsTime = 200;
+        this.intervalTimeoutGtArray(intervalsTime);
+      })
+    },
+    /**
+     * 定时修改颜色-正常结束
+     * 这里根据id获取对象的时候千万不能用foreach之类的语法
+     *
+     */
+    intervalEndGtArray(intervalsTime){
+      let resultArr = this.arrEmpty[0];
+      resultArr.start = resultArr.start + this.getTimeDiff;
+      resultArr.end = resultArr.start;
+      resultArr.stageColor = this.runningColor;
+      let interVal = setInterval(()=>{
+        debugger
+        intervalsTime--;
+        resultArr.end = new dayjs(resultArr.end).add(1,'second').toString();
+        if(intervalsTime == 0){
+          resultArr.stageColor = this.endColor;
+          clearInterval(interVal);
+        }
+      },1000);
+    },
+    /**
+     * 定时修改颜色-异常结束
+     * 这里根据id获取对象的时候千万不能用foreach之类的语法
+     *
+     */
+    intervalTimeoutGtArray(intervalsTime){
+      let resultArr = this.arrEmpty[1];
+      resultArr.start = resultArr.start + this.getTimeDiff;
+      resultArr.end = resultArr.start;
+      resultArr.stageColor = this.runningColor;
+      let interVal = setInterval(()=>{
+        debugger
+        intervalsTime--;
+        resultArr.end = new dayjs(resultArr.end).add(1,'second').toString();
+        if(intervalsTime == 0){
+          resultArr.stageColor = this.timeoutEndColor;
+          clearInterval(interVal);
+        }
+      },1000);
     }
   }
 }
